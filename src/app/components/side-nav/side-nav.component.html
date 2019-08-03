@@ -1,0 +1,12 @@
+<mat-nav-list *ngIf="houses">
+  <div class="text-align-center width-full">
+  </div>
+  <mat-list-item *ngFor="let house of houses" style="padding-top: 32px; height: auto">
+    <a class="text-align-center" routerLink="/houses/{{house.stub}}" style="padding-top: 16px">
+      <img class="text-align-center" src="{{house.banner}}"
+        width="63"
+        height="100"
+      />
+    </a>
+  </mat-list-item>
+</mat-nav-list>

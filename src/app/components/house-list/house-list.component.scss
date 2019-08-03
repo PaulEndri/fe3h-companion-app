@@ -1,0 +1,22 @@
+@import "../../app.variables.scss";
+
+.house-list-container {
+    &.blackEagles {
+        background-color: $blackEaglesPrimary;
+        color: $blackEaglesSecondary;
+    }
+
+    &.blueLions {
+        background-color: $blueLionsPrimary;
+        color: $blueLionsSecondary;
+    }
+
+    &.goldenDeer{
+        background-color: $goldenDeerPrimary;
+        color: $goldenDeerSecondary;
+    }
+}
+
+.house-text-container > figure {
+    justify-content: start !important;
+}
