@@ -4,6 +4,8 @@ import { Observable } from 'rxjs';
 import { map, share } from 'rxjs/operators';
 import { House } from 'src/app/types/house';
 import { GoldenDeer } from 'src/app/data/houses/goldenDeer';
+import { BlackEagles } from '../../data/houses/blackEagles';
+import { BlueLions } from '../../data/houses/blueLions';
 
 @Component({
   selector: 'app-side-nav',
@@ -21,6 +23,6 @@ export class SideNavComponent implements OnInit {
   constructor(private breakpointObserver: BreakpointObserver) {}
 
   ngOnInit() {
-    this.houses = [GoldenDeer, GoldenDeer, GoldenDeer];
+    this.houses = [GoldenDeer, BlackEagles, BlueLions];
   }
 }

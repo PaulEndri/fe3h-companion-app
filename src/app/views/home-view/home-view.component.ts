@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { House } from 'src/app/types/house';
 import { GoldenDeer } from 'src/app/data/houses/goldenDeer';
+import { BlackEagles } from '../../data/houses/blackEagles';
+import { BlueLions } from '../../data/houses/blueLions';
 
 @Component({
   selector: 'app-home-view',
@@ -13,7 +15,7 @@ export class HomeViewComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.houses = [GoldenDeer, GoldenDeer];
+    this.houses = [GoldenDeer, BlackEagles, BlueLions];
   }
 
 }
